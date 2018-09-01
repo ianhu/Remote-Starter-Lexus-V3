@@ -43,7 +43,7 @@ int headlights = 11;			// Connected to the Front Headlights
 
 
 								// Replace with the number of the controlling phone
-String myPhoneNum = "+447738238350";
+String myPhoneNum = "+44xxxxxxxxxxx";
 
 // DS18B20 Temperature Sensor Data Pin
 int tempPin = 2;
@@ -227,7 +227,7 @@ void sendSms(String message)
 {
 	SIM900.print("AT+CMGF=1\r");
 	delay(1000);
-	SIM900.println("AT+CMGS=\"+447738238350\"\r");
+	SIM900.println("AT+CMGS=\"+44xxxxxxxxxx\"\r");
 	delay(100);
 	SIM900.println(message);
 	delay(100);
