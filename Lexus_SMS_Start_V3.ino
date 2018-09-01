@@ -6,11 +6,10 @@ Created:	30/08/2018 11:17:59
 Author:     ian-PC\ian
 */
 
-//#include <LowPower.h>
+#include <LowPower.h>
 #include <Blynk.h>
 #include <SoftwareSerial.h>
-//#include <OneWire.h> 
-//#include <DallasTemperature.h>
+
 
 // SIM900 Shield Serial Pins
 SoftwareSerial SIM900(7, 8);
@@ -42,14 +41,8 @@ int Key_relay = 2;              // Relay K4 Controls the operation of turning th
 int headlights = 11;			// Connected to the Front Headlights
 
 
-								// Replace with the number of the controlling phone
+// Replace with the number of the controlling phone
 String myPhoneNum = "+44xxxxxxxxxxx";
-
-// DS18B20 Temperature Sensor Data Pin
-int tempPin = 2;
-
-//OneWire oneWire(tempPin);
-//DallasTemperature sensors(&oneWire);
 
 
 unsigned long carStartTime; // time the car was sent start command
